@@ -41,5 +41,7 @@ class Controller_Layout extends Controller_Template
 		$this->template->footer = View::forge('layout/footer');
 	}
 
+
 	//バリデーションメソッド
+
 }

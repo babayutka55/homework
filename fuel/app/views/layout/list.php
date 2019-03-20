@@ -5,7 +5,7 @@
   echo $lists['first_name'];
  ?>
 <br>
-<table>
+<table id="table">
   <tr>
     <th>姓</th>
     <th>名</th>
@@ -13,7 +13,7 @@
     <th>削除</th>
   </tr>
   <?php foreach($lists as $list): ?>
-  <tr id="<?php echo $list['id'] ?>">
+  <tr id="<?php echo $list['id'] ?>" class="tr">
     <td><?php echo $list['first_name']; ?></td>
     <td><?php echo $list['last_name']; ?></td>
     <td><?php echo $list['gender']; ?></td>
