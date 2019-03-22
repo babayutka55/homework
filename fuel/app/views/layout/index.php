@@ -1,6 +1,6 @@
 <h1><?php echo $title; ?></h1>
 <p><?php echo $user; ?>さん、こんにちは。</p>
-
+<?php if(isset($html_error)){echo $html_error;} ?>
 <?php echo Form::open('layout/list'); ?>
   <p>
     <?php echo Form::label('姓','first_name'); ?>
