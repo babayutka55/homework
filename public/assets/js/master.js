@@ -57,7 +57,7 @@ $(function(){
   });
 
   //「詳細をクリック」
-  $('.btn-modal').on('click', function(){
+  $(document).on('click','.btn-modal',function(){console.log('btn-modal clicked');
     $('#overlay').fadeIn();
     $('#modal').fadeIn();
 
