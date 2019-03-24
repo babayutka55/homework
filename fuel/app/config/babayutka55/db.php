@@ -24,7 +24,7 @@ return array(
          //'username' => 'root',
          //'password' => 'root',
          'username' => getenv('USER_NAME'),
-         'password' => getenv('PASSWORD').'a',
+         'password' => getenv('PASSWORD'),
       ),
         'profiling' => true,
    ),
