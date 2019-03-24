@@ -23,3 +23,4 @@
     <?php echo Form::input('send','送信',array('class'=>'btn','type'=>'submit')); ?>
   </p>
 <?php echo Form::close(); ?>
+<?php echo $_SERVER['SERVER_NAME']; ?><?php echo getenv('FUEL_ENV'); ?>
