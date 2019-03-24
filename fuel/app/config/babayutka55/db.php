@@ -18,13 +18,13 @@ return array(
    'default' => array(
       'connection'  => array(
          //'hostname' => '127.0.0.1',
-         'hostname' => '127.0.0.1',
+         'hostname' => getenv('HOST_NAME'),
          'port'     => '3306',
-         'database' => 'fuel_dev',
+         'database' => getenv('DATABASE'),
          //'username' => 'root',
          //'password' => 'root',
-         'username' => 'gennsuruh',
-         'password' => 'bomber',
+         'username' => getenv('USER_NAME'),
+         'password' => getenv('PASSWORD'),
       ),
         'profiling' => true,
    ),

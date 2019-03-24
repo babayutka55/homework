@@ -53,6 +53,7 @@ class Controller_Layout extends Controller_Template
 		$pagination = $this->createPaginationObject();
 		$lists = DB::select('id','first_name','last_name','gender')
 		                            ->from('form')
+																->order_by( 'id', 'desc')
 		                            ->limit($pagination->per_page)
 		                            ->offset($pagination->offset)
 		                            ->execute()
@@ -76,6 +77,7 @@ class Controller_Layout extends Controller_Template
 		$pagination = $this->createPaginationObject();
 		$lists = DB::select('id','first_name','last_name','gender')
 		                            ->from('form')
+																->order_by( 'id', 'desc' )
 		                            ->limit($pagination->per_page)
 		                            ->offset($pagination->offset)
 		                            ->execute()

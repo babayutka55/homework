@@ -5,6 +5,7 @@
 <table id="table">
   <tr>
     <th>詳細</th>
+    <th>id</th>
     <th>姓</th>
     <th>名</th>
     <th>性別</th>
@@ -13,6 +14,7 @@
   <?php foreach($lists as $list): ?>
   <tr id="<?php echo $list['id'] ?>" class="tr">
     <td class="btn-modal"><button>詳細</button></td>
+    <td class="user_id"><?php echo $list['id']; ?></td>
     <td><?php echo $list['first_name']; ?></td>
     <td><?php echo $list['last_name']; ?></td>
     <td><?php echo $list['gender']; ?></td>
@@ -30,16 +32,18 @@
   <h1>詳細</h1>
   <table>
     <tr>
+      <th>id</th>
       <th>姓</th>
       <th>名</th>
       <th>性別</th>
     </tr>
     <tr>
-      <td><input type="text" value="" id="modal_first_name"></th>
-      <td><input type="text" value="" id="modal_last_name"></th>
-      <td><input type="text" value="" id="modal_gender"></th>
+      <td><div id="modal_id"></div></td>
+      <td><input type="text" value="" id="modal_first_name"></td>
+      <td><input type="text" value="" id="modal_last_name"></td>
+      <td><input type="text" value="" id="modal_gender"></td>
     </tr>
   </table>
   <button type="button" name="button" id="modal_change_button">変更</button>
 </div>
-<button class="btn" id="btn-modal">開く</button>
+<button class="btn" id="btn-modal">開く</button><?php echo $_SERVER['SERVER_NAME']; ?>
