@@ -4,7 +4,7 @@
 <br>
 <table id="table">
   <tr>
-    <th>詳細</th>
+    <th>編集</th>
     <th>id</th>
     <th>姓</th>
     <th>名</th>
@@ -13,7 +13,7 @@
   </tr>
   <?php foreach($lists as $list): ?>
   <tr id="<?php echo $list['id'] ?>" class="tr">
-    <td class="btn-modal"><button>詳細</button></td>
+    <td class="btn-modal"><button>編集</button></td>
     <td class="user_id"><?php echo $list['id']; ?></td>
     <td><?php echo $list['first_name']; ?></td>
     <td><?php echo $list['last_name']; ?></td>

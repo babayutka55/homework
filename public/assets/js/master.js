@@ -90,12 +90,23 @@ $(function(){
 
     $.ajax({
       method : 'POST',
-      url : '../form/update',
+      url : '../form/update2',
       datatype : 'json',
       data : vals
     }).done(function(data){
 
-      console.log(data.result[0].id);
+      //console.log(data.result.id);
+      //return;
+
+      let id = data.result.id;
+
+      //テーブルを編集。dataは行の各値が入った配列
+      //console.log(data.result[0].id);
+      $('#' + id).children()[2].innerHTML = data.result.first_name;
+      $('#' + id).children()[3].innerHTML = data.result.last_name;
+      $('#' + id).children()[4].innerHTML = data.result.gender;
+
+
 
     }).fail(function(data){
 
