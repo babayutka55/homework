@@ -26,4 +26,9 @@ class Controller_Hoge extends \Controller_Template
 
     $this->template->content = \View::forge('hoge::content',$data);
   }
+
+  public function action_test()
+  {
+
+  }
 }

@@ -110,6 +110,8 @@ $(function(){
 
     }).fail(function(data){
 
+      console.log('failed');
+
     }).always(function(){
 
       console.log('finish');

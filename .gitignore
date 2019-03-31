@@ -18,6 +18,9 @@ desktop.ini
 # /composer.lock
 /fuel/vendor
 
+# npm
+/node_modules
+
 # any of the fuel packages installed by default
 /docs/
 /fuel/core/
