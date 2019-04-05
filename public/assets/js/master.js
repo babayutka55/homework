@@ -95,8 +95,12 @@ $(function(){
       data : vals
     }).done(function(data){
 
-      //console.log(data.result.id);
-      //return;
+      //console.log(data.json_result.res);return;
+
+      if(data.json_result.res == "NG"){
+        console.log('NG');
+        return;
+      }
 
       let id = data.result.id;
 
@@ -107,10 +111,9 @@ $(function(){
       $('#' + id).children()[4].innerHTML = data.result.gender;
 
 
-
     }).fail(function(data){
 
-      console.log('failed');
+      console.log('サーバーエラー');
 
     }).always(function(){
 

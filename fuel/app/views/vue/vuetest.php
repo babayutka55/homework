@@ -15,6 +15,6 @@
     <div class="" id="app">
       <example></example>
     </div>
-    <?php echo Asset::js('app.js'); ?>
+    <?php echo Asset::js('app.js'); ?>a
   </body>
 </html>
